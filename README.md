@@ -43,5 +43,7 @@ setTimeout(function(){
   testNumber.setMax(100);
   testNumber.val(500);
   testNumber.val(9);
+  testNumber.removeBounds();
+  testNumber.val(1500);
 },5000);
 ```
