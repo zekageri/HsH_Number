@@ -2,7 +2,7 @@
 This is a custom HTML element which will simplify the number input handling
 
 - Created only with pure javascript. ( No dependency except the stlyesheet )
-- on("chanfe"), on("decrease") and on("increase") event callback handle
+- on("change"), on("decrease") and on("increase") event callback handle
 - Setter / getter for value, min and max attributes.
 - Mobile friendly and fully responsive
 
