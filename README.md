@@ -8,6 +8,8 @@ This is a custom HTML element which will simplify the number input handling
 
 Feature goals:
 - Add dark / light mode.
+- Add visible error handling. ( speech bubbles or something )
+  - This will cause a lot of trouble for internationalisation so i dont know...
 
 HTML:
 
