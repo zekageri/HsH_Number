@@ -72,13 +72,13 @@ class hsNumber extends HTMLElement {
         this.input.addEventListener("change", function () {
             if (self.min !== null && self.max !== null) {
                 let val = parseInt(self.input.value);
-                if (val > self.max) {
-                    self.input.value = self.max;
+                let valToAdjust = val;
+                if (val > self.max) { valToAdjust = self.max; }
+                if (val <= self.min) { valToAdjust = self.min; }
+                if (valToAdjust !== val) {
+                    self.input.value = valToAdjust;
                     self.addErrorAnimation();
-                }
-                if (val <= self.min) {
-                    self.input.value = self.min;
-                    self.addErrorAnimation();
+                    self.setLength();
                 }
             }
         }, false);
